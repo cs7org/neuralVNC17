@@ -1,6 +1,8 @@
 function angle = angleEdges (graph, midNode, node1, node2)
-%Thias function calculates the angle between node1 and node2 linking via
-%midNode
+% written by Xenia Flamm, comment by Christina Stadler
+
+% This function calculates the angle between node1 and node2 linking via
+% midNode
 
 midNodeCoord = graph.Nodes.Coordinates(midNode,:);
 node1Coord = graph.Nodes.Coordinates(node1,:);

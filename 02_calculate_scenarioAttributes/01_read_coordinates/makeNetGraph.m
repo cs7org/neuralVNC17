@@ -1,6 +1,8 @@
 function netGraph = makeNetGraph(netJunctions,netLanes)
-%This function structures the net.xml information from getJunctions.m and
-%getLanes.m into a graph
+% written by Xenia Flamm, edited by Christina Stadler
+
+% This function structures the net.xml information from getJunctions.m and
+% getLanes.m into a graph
 
 % read xml attributes of junctions and lanes
 from = netLanes(:,4);

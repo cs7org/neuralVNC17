@@ -1,6 +1,8 @@
 function attrMatrix = automCompAttr(listFiles_scenarios,some_function)
-%This function initiates the computation of road and building attributes 
-%for all net.xml files listed in listFiles_scenarios
+% written by Xenia Flamm, comments by Christina Stadler
+
+% This function initiates the computation of road and building attributes 
+% for all net.xml files listed in listFiles_scenarios
 
 nbrScenarios = size(listFiles_scenarios,1);
 attrMatrix = [];

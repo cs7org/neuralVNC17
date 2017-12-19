@@ -1,13 +1,15 @@
 function [target] = loadTarget(scenarioCount, testScenarios, listFiles)
+% written by Christina Stadler
+
 %This function loads all target data, that should be part of the training
-%data set and leaves out validation data declared in
+%data set and leaves out validation data declared in script
 %create_trainingData_FFnet.m
 
 j = 1;
 for i = 1:scenarioCount
     
     % check whether scenario i is a validation scenario
-    if find(testScenarios==i) ~= 0
+    if find(testScenarios==i)~=0
         
     else
         filename = listFiles(i,1).name;

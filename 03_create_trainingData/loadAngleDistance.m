@@ -1,4 +1,6 @@
 function [angle, distance] = loadAngleDistance(listFiles, trainingScenarioCount, angleEnd, distanceEnd)
+% written by Christina Stadler
+
 %This function prepares angle and distance values for as input data for the
 %training process
 

@@ -1,6 +1,8 @@
-function netLanes = getLanes(filename) 
-%This function reads coordinates, ID, length and adjoining lanes related
-%to edges in the net.xml file overhanded by filename
+function netLanes = getLanes(filename)
+% written by Xenia Flamm, edited by Christina Stadler
+
+% This function reads coordinates, ID, length and adjoining lanes related
+% to edges in the net.xml file overhanded by filename
 
 DOMedges = xmlread(filename);
 

@@ -1,6 +1,8 @@
 function lengthRealLanes = compLanes_graph(graph)
-%This function computes the real length of lanes originating in node j and
-%heading to node N(i);
+% written by Xenia Flamm, comments edited by Christina Stadler
+
+% This function computes the real length of lanes originating in node j and
+% heading to node N(i);
 % Angle values <20° and >160° are not defined as curves; In consequence,
 % the adjoining lanes need to be handled as one lane 
 

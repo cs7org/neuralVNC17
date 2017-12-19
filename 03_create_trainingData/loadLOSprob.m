@@ -1,4 +1,6 @@
 function [LOSprob] = loadLOSprob(filename)
+% written by Christina Stadler
+
 %This function loads target data of the scenario "filename"
 
 load(filename, 'PLOS');

@@ -1,6 +1,8 @@
 function attrVector = attrScenario(filename1,filename2)
-%This function calculates the scenario attributes for a given scenario
-%represented by net.xml and poly.xml files
+% written by Xenia Flamm, edited by Christina Stadler
+
+% This function calculates the scenario attributes for a given scenario
+% represented by net.xml and poly.xml files
 
 % read coordinates and additional information of junctions and lanes
 netJunctions = getJunctions(filename1);

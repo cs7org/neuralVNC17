@@ -1,3 +1,5 @@
+% written by Christina Stadler
+
 %This script starts the training process of a FF neural network configered
 %under section %% Training
 
@@ -5,9 +7,8 @@ clear;
 
 
 %% Search paths
-% Attention: Please type your path!
 
-path_str_functions = 'E:\publication\04_training';        % folder path to training data
+path_str_functions = 'E:\public\04_training';        % folder path to training data
 addpath(genpath(path_str_functions));
 
 

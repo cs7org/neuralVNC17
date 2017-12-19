@@ -1,6 +1,8 @@
 function [angles, nbrAngles] = compAngles_graph(graph)
-%This function computes angles between adjoining lanes and counts the
-%curves by definition
+% written by Xenia Flamm, comments edited by Christina Stadler
+
+% This function computes angles between adjoining lanes and counts the
+% curves by definition
 
 nbrAngles = zeros(1,numnodes(graph));
 

@@ -1,6 +1,8 @@
 function addedLanes = addLanes(graph,lengthRealLanes)
-%This function computes the real length of lanes with the same origin node
-%(in compLanes_graph, node j);
+% written by Xenia Flamm, comments by Christina Stadler
+
+% This function computes the real length of lanes with the same origin node
+% (in compLanes_graph, node j);
 % Angle values <20° and >160° are not defined as curves; In consequence,
 % the adjoining lanes need to be handled as one lane 
 

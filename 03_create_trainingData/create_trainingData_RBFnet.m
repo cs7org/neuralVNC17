@@ -1,3 +1,5 @@
+% written by Christina Stadler
+
 %This script creates the data set to train a radial basis function neural
 %network
 
@@ -12,25 +14,19 @@ clear;
 
 
 %% Search paths
-% Attention: Please type your paths!
 
-pathFolder_targetData = 'E:\publication\00_data\02_LOSprobabilities';	% folder path of target data for supervised learning
-pathFolder_trainingData = 'E:\publication\04_training';                 % folder path as target for the result
-addpath(genpath(pathFolder_targetData),genpath(pathFolder_trainingData));
+path_targetData = 'E:\public\00_data\02_LOSprobabilities';      % folder path of target data for supervised learning
+path_trainingData = 'E:\public\04_training';                    % folder path as target for the result
+addpath(genpath(path_targetData),genpath(path_trainingData));
+    
 
+%% Prepare target data
 
-%% List target data
+listFiles = dir(fullfile(path_targetData,'*.mat'));   % list all target data
 
-listFiles = list_matFiles(pathFolder_targetData);                       % list all target data
-
-% INFO: Please type number of scenarios that should not be part of the
-% training data for validation pruposes!
-testScenarios = [40 41 42 48];
+testScenarios = [40 41 42 48];                        % numbers of scenarios that should not be part of the training data for validation pruposes
 scenarioCount = size(listFiles,1);
 trainingScenarioCount = size(listFiles,1)-size(testScenarios,2);
-
-
-%% Load target
 
 target = loadTarget(scenarioCount, testScenarios, listFiles);
 
@@ -45,7 +41,7 @@ input = attributes;
 
 %% Save training data
 
-storage = strjoin({pathFolder_trainingData,'trainingData_RBFnet.mat'},'\');
+storage = strjoin({path_trainingData,'trainingData_RBFnet.mat'},'\');
 
 save(storage,'input', 'target')
 

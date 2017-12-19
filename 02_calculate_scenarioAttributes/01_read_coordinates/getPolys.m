@@ -1,6 +1,8 @@
 function polyBuildings = getPolys(filename)
-%This function reads ID and coordinates related to buildings in the
-%poly.xml file overhanded by filename
+% written by Xenia Flamm, comments by Christina Stadler
+
+% This function reads ID and coordinates related to buildings in the
+% poly.xml file overhanded by filename
 
 DOMpolys = xmlread(filename);
 

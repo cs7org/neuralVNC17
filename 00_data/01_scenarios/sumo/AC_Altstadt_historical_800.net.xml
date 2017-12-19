@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><!-- generated on 10/11/17 17:48:25 by SUMO netconvert Version 0.25.0
+<?xml version="1.0" encoding="utf-8"?><!-- generated on 12/13/17 15:20:39 by SUMO netconvert Version 0.25.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
         <type-files value="osmNetconvert.typ.xml"/>
-        <osm-files value="AC_Altstadt_historical_800.osm"/>
+        <osm-files value="E:\public\00_data\01_scenarios\osm\AC_Altstadt_historical_800.osm"/>
     </input>
 
     <output>
-        <output-file value="AC_Altstadt_historical_800.net.xml"/>
+        <output-file value="E:\public\00_data\01_scenarios\sumo\AC_Altstadt_historical_800.net.xml"/>
     </output>
 
     <projection>

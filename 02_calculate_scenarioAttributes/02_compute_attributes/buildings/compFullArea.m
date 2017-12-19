@@ -1,8 +1,10 @@
 function area = compFullArea (filename1,filename2)
-%This function calculates the full area of a scenario from the boundaries'
-%coordinates of the corresponding poly.xml and net.xml files
-%These boundaries run along the outermost road or building coordinate on 
-%each side
+% written by Xenia Flamm, comments by Christina Stadler
+
+% This function calculates the full area of a scenario from the boundaries'
+% coordinates of the corresponding poly.xml and net.xml files
+% These boundaries run along the outermost road or building coordinate on 
+% each side
     
 DOMnet = xmlread(filename1);
 location1 = DOMnet.getElementsByTagName('location');

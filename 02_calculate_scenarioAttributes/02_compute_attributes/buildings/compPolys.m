@@ -1,6 +1,8 @@
 function areaBuildings = compPolys(polys)
-%This function calculates the area of all buildings from their coordinates
-%stored in variable polys
+% written by Xenia Flamm, comments by Christina Stadler
+
+% This function calculates the area of all buildings from their coordinates
+% stored in variable polys
 
 nbrPolys = size(polys,1);                           % number of buildings/polys
 areaBuildings = zeros(nbrPolys,1);

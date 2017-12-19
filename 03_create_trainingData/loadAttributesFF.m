@@ -1,4 +1,6 @@
 function [attributes] = loadAttributesFF(scenarioCount, testScenarios, angleEnd, distanceEnd)
+% written by Christina Stadler
+
 %This function prepares the attributes of the scenarios that should be part
 %of the training data for the training process of a FF neural network
 
@@ -8,7 +10,7 @@ dimension = angleEnd*distanceEnd;
 
 for k = 1:scenarioCount
     
-    % check if current scenario is a validation scenario (no training
+    % check whether current scenario is a validation scenario (no training
     % scenario)
     if find(testScenarios==k)~=0
     else

@@ -1,6 +1,8 @@
 function netJunctions = getJunctions(filename) 
-%This function reads coordinates, ID and adjoining lanes related to
-%junctions in the net.xml file overhanded by filename
+% written by Xenia Flamm, edited by Christina Stadler
+
+% This function reads coordinates, ID and adjoining lanes related to
+% junctions in the net.xml file overhanded by filename
 
 DOMjunctions = xmlread(filename);
 
